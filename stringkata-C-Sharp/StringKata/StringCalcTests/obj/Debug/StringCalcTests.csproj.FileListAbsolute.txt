@@ -1,0 +1,9 @@
+D:\projects\stringkata\StringKata\StringCalcTests\bin\Debug\StringCalcTests.dll
+D:\projects\stringkata\StringKata\StringCalcTests\bin\Debug\StringCalcTests.pdb
+D:\projects\stringkata\StringKata\StringCalcTests\bin\Debug\StringCalc.dll
+D:\projects\stringkata\StringKata\StringCalcTests\bin\Debug\xunit.dll
+D:\projects\stringkata\StringKata\StringCalcTests\bin\Debug\StringCalc.pdb
+D:\projects\stringkata\StringKata\StringCalcTests\bin\Debug\xunit.xml
+D:\projects\stringkata\StringKata\StringCalcTests\obj\Debug\StringCalcTests.csprojResolveAssemblyReference.cache
+D:\projects\stringkata\StringKata\StringCalcTests\obj\Debug\StringCalcTests.dll
+D:\projects\stringkata\StringKata\StringCalcTests\obj\Debug\StringCalcTests.pdb
