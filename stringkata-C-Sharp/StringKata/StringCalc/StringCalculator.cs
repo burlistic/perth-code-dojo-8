@@ -21,10 +21,16 @@ namespace StringCalc
 
             if (stringInput.Length > 2 && stringInput.Substring(0, 3) == "//[")
             {
-                var regEx = new Regex(@"\[(.)\]");
+                var regEx = new Regex(@"\[(\**|.*)\]");
                 var delimiters = regEx.Matches(stringInput);
 
-                delimiterString = string.Join(",", delimiters);
+                //delimiterString = string.Join(",", delimiters);
+
+                // TODO - ignore square brackets via regex
+                for (int i = 0; i < delimiters.Count; i++)
+                {
+                    delimiterString += delimiters[i].Value.Replace("[", "").Replace("]", "");
+                }
 
                 var lastEndBracket = stringInput.LastIndexOf(']');
                 stringInput = stringInput.Remove(0, (lastEndBracket + 1));
