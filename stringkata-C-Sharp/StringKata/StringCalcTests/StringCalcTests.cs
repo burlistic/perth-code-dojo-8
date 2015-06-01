@@ -80,5 +80,11 @@ namespace StringCalcTests
             Assert.Equal(6, StringCalculator.Add("//[*][%]\n1*2%3"));
         }
 
+        [Fact]
+        public void SupportThreeSpecifiedDelimiters()
+        {
+            Assert.Equal(10, StringCalculator.Add("//[*][%][a]\n1*2%3a4"));
+        }
+
     }
 }

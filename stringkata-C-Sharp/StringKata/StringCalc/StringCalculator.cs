@@ -19,7 +19,7 @@ namespace StringCalc
             // get a list of delimiter matches
             if (stringInput.Length > 2 && stringInput.Substring(0, 3) == "//[")
             {
-                var regEx = new Regex(@"\[(\**|.*)\]");
+                var regEx = new Regex(@"\[(.*?)\]");
                 delimiters = regEx.Matches(stringInput);      
             }
 
