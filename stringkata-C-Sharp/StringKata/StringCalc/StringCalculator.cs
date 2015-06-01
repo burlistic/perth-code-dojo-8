@@ -16,43 +16,60 @@ namespace StringCalc
                 return 0;
             }
 
+            MatchCollection delimiters = null;
 
-            var delimiterString = "";
-
+            // get a list of delimiter matches
             if (stringInput.Length > 2 && stringInput.Substring(0, 3) == "//[")
             {
                 var regEx = new Regex(@"\[(\**|.*)\]");
-                var delimiters = regEx.Matches(stringInput);
-
-                //delimiterString = string.Join(",", delimiters);
-
-                // TODO - ignore square brackets via regex
-                for (int i = 0; i < delimiters.Count; i++)
-                {
-                    delimiterString += delimiters[i].Value.Replace("[", "").Replace("]", "");
-                }
-
-                var lastEndBracket = stringInput.LastIndexOf(']');
-                stringInput = stringInput.Remove(0, (lastEndBracket + 1));
+                delimiters = regEx.Matches(stringInput);      
             }
 
+            // clean the end of the string
+            var lastEndBracket = stringInput.LastIndexOf(']');
+            stringInput = stringInput.Remove(0, (lastEndBracket + 1));
 
-            var splitString = stringInput.Split(new string[] { ",", "\n", delimiterString }, StringSplitOptions.RemoveEmptyEntries);
+            // remove new lines?
+
+            string[] splitString = null;
+
+            if (delimiters == null)
+            {
+                // split using comma and newline characters only
+                splitString = stringInput.Split(new char[]{',', '\n'}, StringSplitOptions.RemoveEmptyEntries);
+            }
+            else
+            {
+                var dCount = delimiters.Count;
+                var delimiterStrings = new string[dCount];
+
+                for (int i = 0; i < dCount; i++)
+                {
+                    delimiterStrings[i] = delimiters[i].Value.Replace("[", "").Replace("]", ""); // TODO - tidy up regex to strip off square brackets
+                }
+
+                splitString = stringInput.Split(delimiterStrings, StringSplitOptions.RemoveEmptyEntries);
+            }
+
 
             int total = 0;
             List<string> negativeNumbers = new List<string>();
 
-            foreach (var s in splitString)
+            if (splitString != null)
             {
-                int number = int.Parse(s);
-                number = number > 1000 ? 0 : number;
 
-                if (number < 0)
+                foreach (var s in splitString)
                 {
-                    negativeNumbers.Add(s);
-                }
+                    int number = int.Parse(s);
+                    number = number > 1000 ? 0 : number;
 
-                total += number;
+                    if (number < 0)
+                    {
+                        negativeNumbers.Add(s);
+                    }
+
+                    total += number;
+                }
             }
 
             if (negativeNumbers.Count > 0)

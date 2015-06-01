@@ -7,3 +7,12 @@ D:\projects\stringkata\StringKata\StringCalcTests\bin\Debug\xunit.xml
 D:\projects\stringkata\StringKata\StringCalcTests\obj\Debug\StringCalcTests.csprojResolveAssemblyReference.cache
 D:\projects\stringkata\StringKata\StringCalcTests\obj\Debug\StringCalcTests.dll
 D:\projects\stringkata\StringKata\StringCalcTests\obj\Debug\StringCalcTests.pdb
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalcTests\bin\Debug\StringCalcTests.dll
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalcTests\bin\Debug\StringCalcTests.pdb
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalcTests\bin\Debug\StringCalc.dll
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalcTests\bin\Debug\xunit.dll
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalcTests\bin\Debug\StringCalc.pdb
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalcTests\bin\Debug\xunit.xml
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalcTests\obj\Debug\StringCalcTests.csprojResolveAssemblyReference.cache
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalcTests\obj\Debug\StringCalcTests.dll
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalcTests\obj\Debug\StringCalcTests.pdb

@@ -1,0 +1,26 @@
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+stringkata-C-Sharp/StringKata/StringCalc/bin/Debug/StringCalc.dll
+stringkata-C-Sharp/StringKata/StringCalc/bin/Debug/StringCalc.pdb
+stringkata-C-Sharp/StringKata/StringCalc/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+stringkata-C-Sharp/StringKata/StringCalc/obj/Debug/StringCalc.csproj.FileListAbsolute.txt
+stringkata-C-Sharp/StringKata/StringCalc/obj/Debug/StringCalc.dll

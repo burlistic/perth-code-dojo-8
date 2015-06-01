@@ -3,3 +3,8 @@ D:\projects\stringkata\StringKata\StringCalc\bin\Debug\StringCalc.pdb
 D:\projects\stringkata\StringKata\StringCalc\obj\Debug\StringCalc.csprojResolveAssemblyReference.cache
 D:\projects\stringkata\StringKata\StringCalc\obj\Debug\StringCalc.dll
 D:\projects\stringkata\StringKata\StringCalc\obj\Debug\StringCalc.pdb
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalc\bin\Debug\StringCalc.dll
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalc\bin\Debug\StringCalc.pdb
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalc\obj\Debug\StringCalc.csprojResolveAssemblyReference.cache
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalc\obj\Debug\StringCalc.dll
+D:\Projects\perth-code-dojo-8\stringkata-C-Sharp\StringKata\StringCalc\obj\Debug\StringCalc.pdb
