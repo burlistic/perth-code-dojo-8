@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace StringCalc
@@ -9,7 +8,6 @@ namespace StringCalc
     {
         public static int Add(string stringInput)
         {
-
 
             if (string.IsNullOrEmpty(stringInput) || string.IsNullOrWhiteSpace(stringInput))
             {
@@ -29,14 +27,12 @@ namespace StringCalc
             var lastEndBracket = stringInput.LastIndexOf(']');
             stringInput = stringInput.Remove(0, (lastEndBracket + 1));
 
-            // remove new lines?
-
-            string[] splitString = null;
+            string[] splitString;
 
             if (delimiters == null)
             {
                 // split using comma and newline characters only
-                splitString = stringInput.Split(new char[]{',', '\n'}, StringSplitOptions.RemoveEmptyEntries);
+                splitString = stringInput.Split(new[]{',', '\n'}, StringSplitOptions.RemoveEmptyEntries);
             }
             else
             {
@@ -55,21 +51,17 @@ namespace StringCalc
             int total = 0;
             List<string> negativeNumbers = new List<string>();
 
-            if (splitString != null)
+            foreach (var s in splitString)
             {
+                int number = int.Parse(s);
+                number = number > 1000 ? 0 : number;
 
-                foreach (var s in splitString)
+                if (number < 0)
                 {
-                    int number = int.Parse(s);
-                    number = number > 1000 ? 0 : number;
-
-                    if (number < 0)
-                    {
-                        negativeNumbers.Add(s);
-                    }
-
-                    total += number;
+                    negativeNumbers.Add(s);
                 }
+
+                total += number;
             }
 
             if (negativeNumbers.Count > 0)
